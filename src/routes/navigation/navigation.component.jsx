@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import {ReactComponent as CrwnLogo} from '../../assets/crown.svg';
+
 import { useContext } from 'react';
 import { UserContext } from '../../contexts/user.context';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
@@ -8,7 +8,7 @@ import CartIcon from '../../component/cart-icon/cart-icon.component';
 import CartDropdown from '../../component/cart-dropdown/cart-dropdown.component';
 import { CartContext } from '../../contexts/cart.context';
 
-import {NavigationContainer, NavLinks, NavLink, LogoContainer} from './navigation.styles';
+import {NavigationContainer, NavLinks, NavLink, LogoContainer, CrownLogo} from './navigation.styles';
 
 const Navigation = () => {
     const {currentUser} = useContext(UserContext);
@@ -18,9 +18,9 @@ const Navigation = () => {
         <Fragment>
             <NavigationContainer>
                 <LogoContainer to='/'>
-                    <CrwnLogo/>
+                    <CrownLogo/>
                 </LogoContainer>
-                
+
                 <NavLinks>
                     <NavLink to='/shop'>
                        Shop

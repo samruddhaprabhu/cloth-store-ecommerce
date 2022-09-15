@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import {ReactComponent as CrwnLogo} from '../../assets/crown.svg';
 
 export const NavigationContainer = styled.div`
   height: 70px;
@@ -26,3 +27,4 @@ export const NavLink = styled(Link)`
 padding: 10px 15px;
 cursor: pointer;
 `
+export const CrownLogo = styled(CrwnLogo)``
